@@ -10,7 +10,8 @@ define([
   return Backbone.Router.extend({
 
     routes: {
-        '': 'root'
+        '': 'root',
+        'test/id': 'showTest'
     },
 
     initialize: function() {
@@ -30,6 +31,21 @@ define([
         success: function() {
           self.IndexView = new IndexView({model: self.ExampleModel});
           self.IndexView.render();
+        }
+      });
+    },
+
+    showTest: function() {
+      console.log("Test page!");
+
+      var self = this;
+
+      self.TestModel = new TestModel();
+
+      self.TestModel.fetch({
+        success: function() {
+          self.TestView = new TestView({model: self.TestModel});
+          self.TestView.render();
         }
       });
     }

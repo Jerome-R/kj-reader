@@ -1,0 +1,16 @@
+{
+	"items":[
+		{
+		"title": "This is my first Backbone item",
+	  	"paragraph": "I'm a JavaScript superstar, don't you think?!"
+		},
+		{
+		"title": "This is my second Backbone item",
+	  	"paragraph": "I'm a JavaScript superstar, don't you think?!"
+		},
+		{
+		"title": "This is my third Backbone item",
+	  	"paragraph": "I'm a JavaScript superstar, don't you think?!"
+		}
+	]
+}
