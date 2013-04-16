@@ -9,7 +9,8 @@ define([
 
   return Backbone.View.extend({
 
-    el: '#main',
+    // This is the access point. My view will be linked to #main in the html.
+    el: '#main', // = $('#main')
 
     template: Handlebars.compile( IndexTemplate ),
 

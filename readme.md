@@ -16,5 +16,5 @@ $ npm install
 ## How to start the http server
 
 ```
-$ node server.js
+$ npm start
 ```
