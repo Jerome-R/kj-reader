@@ -4,14 +4,16 @@
 define([
   'backbone',
   'models/example',
-  'views/index'
-], function( Backbone, ExampleModel, IndexView ) {
+  'views/index',
+  'models/test',
+  'views/test'
+], function( Backbone, ExampleModel, IndexView, TestModel, TestView ) {
 
   return Backbone.Router.extend({
 
     routes: {
         '': 'root',
-        'test/id': 'showTest'
+        'test/:id': 'showTest'
     },
 
     initialize: function() {
@@ -35,7 +37,7 @@ define([
       });
     },
 
-    showTest: function() {
+    showTest: function(id) {
       console.log("Test page!");
 
       var self = this;
