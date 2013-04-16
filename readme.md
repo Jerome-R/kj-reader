@@ -1,11 +1,13 @@
-My project
+KJ Reader project
 ==========
 
-## Installation
+## Une web app pour lire vos flux RSS
+by Kryss and Jérome
 
 ### Node.js
-
+```
 http://nodejs.org/download/
+```
 
 ### NPM Packages
 
@@ -17,4 +19,17 @@ $ npm install
 
 ```
 $ node server.js
+```
+localhost:8080
+
+## Vendors
+
+Cette appli utilise :
+Twitter Bootstrap
+```
+http://twitter.github.io/bootstrap/index.html
+```
+FeedEk jQuery RSS/ATOM Feed Plugin
+```
+http://jquery-plugins.net/FeedEk/FeedEk.html
 ```
