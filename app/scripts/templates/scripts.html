@@ -2,7 +2,7 @@
     $(document).ready(function () {  
         $('#divRss').FeedEk({
             FeedUrl: 'http://feeds2.feedburner.com/BonjourMadame',
-            MaxCount: 20
+            MaxCount: 3
         });
         $('#divRss2').FeedEk({
             FeedUrl: 'http://backend.deviantart.com/rss.xml?q=in%3Aphotography+sort%3Atime',
@@ -10,21 +10,3 @@
         });
     });    
 </script>
-
-<div class="span8">
-	{{#each items}}
-		<h2>{{this.title}}</h2>
-		<p>{{this.paragraph}}</p>
-	{{/each}}
-
-	<div class="rssDiv">
-		<h2>RSS 1</h2>
-		<div id="divRss"></div>
-	</div>
-	<div class="rssDiv">
-		<h2>RSS 2</h2>
-		<div id="divRss2"></div>
-	</div>
-
-	<a href="#">Retour</a>
-</div>
