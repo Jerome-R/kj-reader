@@ -22,6 +22,7 @@ require.config({
       exports: '_'
     },
     'backbone': {
+      // Everytime backbone is included, it also includes underscore and zepto
       deps: [ 'underscore', 'zepto'],
       exports: 'Backbone'
     },

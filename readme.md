@@ -36,3 +36,4 @@ FeedEk jQuery RSS/ATOM Feed Plugin
 ```
 http://jquery-plugins.net/FeedEk/FeedEk.html
 ```
+$ npm start

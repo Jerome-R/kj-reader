@@ -16,7 +16,8 @@ define([
     routes: {
         '': 'root',
         'list_rss/:categorie': 'showList',
-        'flux_rss/:rss': 'showFlux'
+        'flux_rss/:rss': 'showFlux',
+        'contact': 'showContact'
     },
 
     initialize: function() {
@@ -25,15 +26,19 @@ define([
     root: function() {
       console.log("I'm the homepage! Yikes!");
 
+      // Saving my context
       var self = this;
 
+      // Create a new "ExampleModel" object
       self.ExampleModel = new ExampleModel();
 
+      // Get the datas from my database and set them into my model object
       self.ExampleModel.fetch({
         error: function() {
-            console.log("Oups, il y a eu une erreur !");
+            console.log('w000t, there\'s an error!');
         },
         success: function() {
+          // If I received my datas from the database, I can now instanciate my view
           self.IndexView = new IndexView({collection: self.ExampleModel});
           self.IndexView.render();
         }
@@ -74,6 +79,10 @@ define([
           self.fluxView.render();
         }
       });
+    },
+
+    showContact: function() {
+      console.log("I'm the contact page!");
     }
 
   });

@@ -6,6 +6,8 @@ define([
 ], function( Backbone ) {
 
   return Backbone.Model.extend({
+    // Everytime you create a new model, you have by default these attributes
+  
     urlRoot: '/api/model.json'
   });
 });

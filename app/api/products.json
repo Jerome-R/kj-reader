@@ -1,0 +1,26 @@
+[
+	{
+	"id": "1",	
+	"title": "flux1",
+  	"description": "decriptif du flux",
+  	"rss-url": "http://feeds2.feedburner.com/BonjourMadame"
+	},
+	{
+	"id": "2",	
+	"title": "flux2",
+  	"description": "decriptif du flux",
+  	"rss_url": "http://backend.deviantart.com/rss.xml?q=in%3Aphotography+sort%3Atime"
+	},
+	{
+	"id": "3",	
+	"title": "flux3",
+  	"description": "decriptif du flux",
+  	"rss_url": "http://www.lequipe.fr/Xml/actu_rss.xml"
+	},
+	{
+	"id": "4",	
+	"title": "flux4",
+  	"description": "decriptif du flux",
+  	"rss_url": "http://gameblog.fr.feedsportal.com/c/35230/f/655016/index.rss"
+	}
+]
