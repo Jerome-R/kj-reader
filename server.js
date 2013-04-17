@@ -19,6 +19,7 @@ var fs = require('fs');
 
 // Load data file
 var products = JSON.parse(fs.readFileSync('app/api/products.json'));
+var all_rss = JSON.parse(fs.readFileSync('app/api/all_rss.json'));
 
 var app = express();
 
@@ -30,7 +31,7 @@ app.use(express.favicon())
   .use(express.cookieParser());
 
 // --------
-// REST API
+// REST API // Exemple for Product
 // --------
 
 app.get('/je-suis-une-url-de-back', function() { console.log('back')});
@@ -49,6 +50,26 @@ app.post('/api/products', function (req, res) { res.status(501).end() });
 app.put('/api/products/:id', function (req, res) { res.status(501).end() });
 app.del('/api/products', function (req, res) { res.status(501).end() });
 app.del('/api/products/:id', function (req, res) { res.status(501).end() });
+
+// --------
+// REST API // RSS
+// --------
+
+app.get('/api/all_rss', function (req, res) { res.json(all_rss) });
+
+app.get('/api/all_rss/:id', function (req, res) {
+  var rss = all_rss.filter(function (p) { return p.id == req.params.id })[0];
+  if (rss) {
+    res.json(rss);
+  } else {
+    res.status(404).end();
+  }
+});
+
+app.post('/api/all_rss', function (req, res) { res.status(501).end() });
+app.put('/api/all_rss/:id', function (req, res) { res.status(501).end() });
+app.del('/api/all_rss', function (req, res) { res.status(501).end() });
+app.del('/api/all_rss/:id', function (req, res) { res.status(501).end() });
 
 // Start server
 app.listen(8080);

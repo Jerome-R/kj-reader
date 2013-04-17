@@ -3,11 +3,11 @@
  */
 define([
     'backbone',
-    'models/example'
-], function( Backbone, Example ) {
+    'models/flux_rss'
+], function( Backbone, Product ) {
 
   return Backbone.Collection.extend({
-    url: '/api/products.json',
+    url: '/api/products'+ this.get("id"),
     model: Product
   });
 });

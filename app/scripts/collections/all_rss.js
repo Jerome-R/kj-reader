@@ -3,11 +3,11 @@
  */
 define([
     'backbone',
-    'models/all_rss'
-], function( Backbone, Allrss ) {
+    'models/flux_rss'
+], function( Backbone, Rss ) {
 
   return Backbone.Collection.extend({
-    url: '/api/' + this.get("id"),
-    model: Allrss
+    url: '/api/all_rss' + this.get("id"),
+    model: Rss
   });
 });

@@ -8,7 +8,7 @@ define([
   'models/list_rss',
   'views/list_rss',
   'views/flux_rss',
-  'models/flux_rss'
+  'collections/all_rss'
 ], function( Backbone, ExampleModel, IndexView, ListModel, ListView, fluxView, fluxModel ) {
 
   return Backbone.Router.extend({
