@@ -20,7 +20,10 @@ $ npm install
 ```
 $ node server.js
 ```
-localhost:8080
+Then use the following URL to display the root page
+```
+http://localhost:8080
+```
 
 ## Vendors
 
