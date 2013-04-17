@@ -8,7 +8,7 @@ define([
   'models/list_rss',
   'views/list_rss',
   'views/flux_rss',
-  'collections/all_rss'
+  'models/flux_rss'
 ], function( Backbone, ExampleModel, IndexView, ListModel, ListView, fluxView, fluxModel ) {
 
   return Backbone.Router.extend({
@@ -16,7 +16,7 @@ define([
     routes: {
         '': 'root',
         'list_rss/:categorie': 'showList',
-        'flux_rss/:rss': 'showFlux',
+        'flux_rss/:id': 'showFlux',
         'contact': 'showContact'
     },
 
@@ -63,7 +63,7 @@ define([
       });
     },
 
-    showFlux: function(rss) {
+    showFlux: function(id) {
       console.log("RSS page!");
 
       var self = this;
@@ -75,7 +75,7 @@ define([
             console.log("Oups, il y a eu une erreur !");
         },
         success: function() {
-          self.fluxView = new fluxView({collection: self.fluxModel});
+          self.fluxView = new fluxView({model: self.fluxModel});
           self.fluxView.render();
         }
       });

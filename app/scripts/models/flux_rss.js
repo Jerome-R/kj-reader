@@ -6,6 +6,6 @@ define([
 ], function( Backbone ) {
 
   return Backbone.Model.extend({
-    urlRoot: '/api/all_rss'
+    urlRoot: '/api/all_rss/'
   });
 });

@@ -14,12 +14,12 @@ define([
     template: Handlebars.compile( IndexTemplate ),
     
     initialize: function(){
-      this.datas = this.collection.toJSON();
+      this.datas = this.model.toJSON();
       console.log(this.datas);
     },
 
     render: function() {
-      this.$el.html(this.template(this.collection.toJSON()));
+      this.$el.html(this.template(this.model.toJSON()));
       $('#divRss').FeedEk({
             FeedUrl: this.datas[1].rss_url,
             MaxCount: 3
