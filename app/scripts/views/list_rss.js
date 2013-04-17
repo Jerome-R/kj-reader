@@ -12,9 +12,14 @@ define([
     el: '#main',
 
     template: Handlebars.compile( IndexTemplate ),
+    
+    initialize: function(){
+      this.datas = this.collection.toJSON();
+      console.log(this.datas);
+    },
 
     render: function() {
-      this.$el.html(this.template(this.model.toJSON()));
+      this.$el.html(this.template(this.collection.toJSON()));
       return this;
     }
   });

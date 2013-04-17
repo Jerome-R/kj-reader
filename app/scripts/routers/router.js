@@ -5,19 +5,17 @@ define([
   'backbone',
   'models/example',
   'views/index',
-  'models/test',
-  'views/test',
   'models/list_rss',
   'views/list_rss',
-  'views/flux_rss'
-], function( Backbone, ExampleModel, IndexView, TestModel, TestView, ListModel, ListView, fluxView ) {
+  'views/flux_rss',
+  'models/flux_rss'
+], function( Backbone, ExampleModel, IndexView, ListModel, ListView, fluxView, fluxModel ) {
 
   return Backbone.Router.extend({
 
     routes: {
         '': 'root',
-        'test/:id': 'showTest',
-        'list_rss/:feed': 'showList',
+        'list_rss/:categorie': 'showList',
         'flux_rss/:rss': 'showFlux'
     },
 
@@ -36,31 +34,13 @@ define([
             console.log("Oups, il y a eu une erreur !");
         },
         success: function() {
-          self.IndexView = new IndexView({model: self.ExampleModel});
+          self.IndexView = new IndexView({collection: self.ExampleModel});
           self.IndexView.render();
         }
       });
     },
 
-    showTest: function(id) {
-      console.log("Test page!");
-
-      var self = this;
-
-      self.TestModel = new TestModel;
-
-      self.TestModel.fetch({
-        error: function() {
-            console.log("Oups, il y a eu une erreur !");
-        },
-        success: function() {
-          self.TestView = new TestView({model: self.TestModel});
-          self.TestView.render();
-        }
-      });
-    },
-
-    showList: function(feed) {
+    showList: function(categorie) {
       console.log("List page!");
 
       var self = this;
@@ -72,7 +52,7 @@ define([
             console.log("Oups, il y a eu une erreur !");
         },
         success: function() {
-          self.ListView = new ListView({model: self.ListModel});
+          self.ListView = new ListView({collection: self.ListModel});
           self.ListView.render();
         }
       });
@@ -83,14 +63,14 @@ define([
 
       var self = this;
 
-      self.ListModel = new ListModel;
+      self.fluxModel = new fluxModel;
 
-      self.ListModel.fetch({
+      self.fluxModel.fetch({
         error: function() {
             console.log("Oups, il y a eu une erreur !");
         },
         success: function() {
-          self.fluxView = new fluxView({model: self.ListModel});
+          self.fluxView = new fluxView({collection: self.fluxModel});
           self.fluxView.render();
         }
       });

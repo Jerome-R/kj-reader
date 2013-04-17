@@ -1,6 +1,4 @@
-{
-
-"items":[
+[
 	{
 	"id": "1",	
 	"title": "flux1",
@@ -26,4 +24,3 @@
   	"rss_url": "http://gameblog.fr.feedsportal.com/c/35230/f/655016/index.rss"
 	}
 ]
-}
