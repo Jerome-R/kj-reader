@@ -7,7 +7,7 @@ define([
 ], function( Backbone, Rss ) {
 
   return Backbone.Collection.extend({
-    url: '/api/all_rss',
+    url: '/api/all_rss/',
     model: Rss
   });
 });
