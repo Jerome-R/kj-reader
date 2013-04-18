@@ -97,6 +97,14 @@
 	"cat": "High-Tech"
 	},
 	{
+	"id": "20",        
+	"title": "GameBlog",
+	"description": "Toute l'actu gaming",
+	"rss-url": "http://gameblog.fr.feedsportal.com/c/35230/f/655016/index.rss",
+	"cat_id": "3",
+	"cat": "High-Tech"
+	},
+	{
 	"id": "13",        
 	"title": "Publique",
 	"description": "Finance publique",
@@ -127,5 +135,13 @@
 	"rss-url": "http://fr.finance.yahoo.com/actualites/categorie-statistiques/?format=rss",
 	"cat_id": "4",
 	"cat": "Finances"
+	},
+	{
+	"id": "17",        
+	"title": "Finance & bourses",
+	"description": "La bourse",
+	"rss-url": "http://fr.finance.yahoo.com/actualites/categorie-actions/?format=rss",
+	"cat_id": "4",
+	"cat": "Games"
 	}
 ]
