@@ -15,11 +15,12 @@ define([
     
     initialize: function(){
       this.datas = this.collection.toJSON();
+      this.datas = _.where(this.datas, {cat_id: this.options.cat_id}) 
       console.log(this.datas);
     },
 
     render: function() {
-      this.$el.html(this.template(this.collection.toJSON()));
+      this.$el.html(this.template({items: this.datas}));
       return this;
     }
   });
