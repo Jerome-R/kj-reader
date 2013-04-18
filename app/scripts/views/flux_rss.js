@@ -22,7 +22,7 @@ define([
       this.$el.html(this.template(this.model.toJSON()));
       $('#divRss').FeedEk({
             FeedUrl: this.datas.rss_url,
-            MaxCount: 3
+            MaxCount: 30
       });
       return this;
     }

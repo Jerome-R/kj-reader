@@ -1,8 +1,12 @@
 body{
 	font-family: arial;
 	list-style: none;
+	min-height: 100%;
 }
-
+.spacer{
+	height:0;
+	clear: both;
+}
 .feedEkList{max-width:450px; list-style:none outside none;background-color:#FFFFFF; border:1px solid #D3CAD7; padding:4px 6px; color:#3E3E3E;}
 .feedEkList li{border-bottom:1px solid #D3CAD7; padding:5px;}
 .feedEkList li:last-child{border-bottom:none;}
@@ -10,3 +14,55 @@ body{
 .itemTitle a:hover{ text-decoration: none;}
 .itemDate{font-size:11px;color:#AAAAAA;}
 .feedEkList .itemContent div > img { width:100%;}
+
+header{
+	text-align: left;
+}
+
+.pull-right{
+	float: right;
+	margin-top: 12px !important;
+	margin-right: 15px;
+}
+
+.head{
+	background: url('../images/JDG-cap-50k-articles.png') no-repeat top left;
+	background-size: cover;
+	height: 200px;
+}
+
+.head h2{
+	margin-left: 10px;
+	color: white;
+}
+.navbar-fixed-top{
+	position: static !important;
+}
+li.cat_list{
+	line-height: 20px;
+	display: block;
+	border-bottom: 1px solid #EEEEEE;
+	padding-bottom: 14px;
+}
+li.cat_list h3{
+	width: 100%;
+	background: black;
+	color: white;
+	box-sizing: border-box;
+	padding-left: 10px;
+}
+li.cat_list p{
+	padding: 10px;
+}
+.menu li{
+	margin-bottom: 10px;
+}
+
+footer{
+	background: black;
+	color: white;
+	text-align: center;
+	width: 100%;
+	padding-top: 4px;
+	font-size: 11px;
+}

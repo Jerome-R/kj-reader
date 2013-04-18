@@ -5,111 +5,127 @@
 	"title": "Foot",
 	"description": "Actualité Football",
 	"rss-url": "http://www.lequipe.fr/Xml/Football/Titres/actu_rss.xml",
-	"cat_id": "1"
+	"cat_id": "1",
+	"cat": "Sports"
 	},
 	{
 	"id": "2",        
 	"title": "Basket",
 	"description": "Actiualité basket-ball",
 	"rss-url": "http://www.lequipe.fr/Xml/Basket/Titres/actu_rss_Basket.xml",
-	"cat_id": "1"
+	"cat_id": "1",
+	"cat": "Sports"
 	},
 	{
 	"id": "3",        
 	"title": "F1",
 	"description": "Actualité Formule 1",
 	"rss-url": "http://www.lequipe.fr/Xml/Formule1/Titres/actu_rss.xml ",
-	"cat": "1"
+	"cat": "1",
+	"cat": "Sports"
 	},
 	{
 	"id": "4",        
 	"title": "Moto GP",
 	"description": "Actualité Moto GP",
 	"rss-url": "http://www.lequipe.fr/Xml/Formule1/Titres/actu_rss_Moto.xml",
-	"cat_id": "1"
+	"cat_id": "1",
+	"cat": "Sports"
 	},
 	{
 	"id": "5",        
 	"title": "Le Figaro",
 	"description": "Actualité politique",
 	"rss-url": "http://www.lamoooche.com/getRSS.php?idnews=2728",
-	"cat_id": "2"
+	"cat_id": "2",
+	"cat": "Actiualités"
 	},
 	{
 	"id": "6",        
 	"title": "Leparisien",
 	"description": "Actiualité politique",
 	"rss-url": "http://www.lamoooche.com/getRSS.php?idnews=8879",
-	"cat_id": "2"
+	"cat_id": "2",
+	"cat": "Actiualités"
 	},
 	{
 	"id": "7",        
 	"title": "20minutes",
 	"description": "Actualité 20minutes",
 	"rss-url": "http://www.lamoooche.com/getRSS.php?idnews=7301",
-	"cat_id": "2"
+	"cat_id": "2",
+	"cat": "Actiualités"
 	},
 	{
 	"id": "8",        
 	"title": "UMP",
 	"description": "Actualité UMP",
 	"rss-url": "http://www.lamoooche.com/getRSS.php?idnews=7660",
-	"cat_id": "2"
+	"cat_id": "2",
+	"cat": "Actiualités"
 	},
 	{
 	"id": "9",        
 	"title": "01NET",
 	"description": "Actualité high tech",
 	"rss-url": "http://www.lamoooche.com/getRSS.php?idnews=2206",
-	"cat_id": "3"
+	"cat_id": "3",
+	"cat": "High-Tech"
 	},
 	{
 	"id": "10",        
 	"title": "Clubic",
 	"description": "Actiualité high tech",
 	"rss-url": "http://www.lamoooche.com/getRSS.php?idnews=1539",
-	"cat_id": "3"
+	"cat_id": "3",
+	"cat": "High-Tech"
 	},
 	{
 	"id": "11",        
 	"title": "ZDNET",
 	"description": "Actualité high tech",
 	"rss-url": "http://www.lamoooche.com/getRSS.php?idnews=501790",
-	"cat_id": "3"
+	"cat_id": "3",
+	"cat": "High-Tech"
 	},
 	{
 	"id": "12",        
 	"title": "Essentiel PC",
 	"description": "Actualité Essentiel PC",
 	"rss-url": "http://www.lamoooche.com/getRSS.php?idnews=551",
-	"cat_id": "3"
+	"cat_id": "3",
+	"cat": "High-Tech"
 	},
 	{
 	"id": "13",        
-	"title": "Finance",
+	"title": "Publique",
 	"description": "Finance publique",
 	"rss-url": "http://fr.finance.yahoo.com/actualites/categorie-finances-publiques/?format=rss",
-	"cat_id": "4"
+	"cat_id": "4",
+	"cat": "Finances"
 	},
 	{
 	"id": "14",        
-	"title": "Finance",
+	"title": "Finance & bourses",
 	"description": "La bourse",
 	"rss-url": "http://fr.finance.yahoo.com/actualites/categorie-actions/?format=rss",
-	"cat_id": "4"
+	"cat_id": "4",
+	"cat": "Finances"
 	},
 	{
 	"id": "15",        
-	"title": "Finance",
+	"title": "La Finance en Europe",
 	"description": "Europe",
 	"rss-url": "http://fr.finance.yahoo.com/actualites/categorie-europe/?format=rss",
-	"cat_id": "4"
+	"cat_id": "4",
+	"cat": "Finances"
 	},
 	{
 	"id": "16",        
-	"title": "Finance",
+	"title": "Les dernières stats",
 	"description": "Statistique",
 	"rss-url": "http://fr.finance.yahoo.com/actualites/categorie-statistiques/?format=rss",
-	"cat_id": "4"
+	"cat_id": "4",
+	"cat": "Finances"
 	}
 ]

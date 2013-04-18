@@ -1,11 +1,15 @@
-
-<div class="">
-	<h1>Accueil</h1>
-	<ul>
+<header class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container-fluid">
+			<img src="images/KJ-logo.png" alt="logo"/>
+		</div>
+	</div>
+</header>
+<div class="spacer"></div>
+<div class="container-fluid">
+	<ul class="unstyled menu">
 	{{#each menu}}
-		<li><a href={{this.link}}>{{this.title}}</a></li>
+		<li><a class="btn btn-block" href={{this.link}}>{{this.title}}</a></li>
 	{{/each}}
 	</ul>
-<div>
-  <p>I want to go to <a href="#contact">contact</a> page.</p>
 </div>
