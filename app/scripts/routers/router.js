@@ -68,14 +68,14 @@ define([
 
       var self = this;
 
-      self.fluxModel = new fluxModel({id: id});
+      self.fluxModel = new fluxModel();
 
       self.fluxModel.fetch({
         error: function() {
             console.log("Oups, il y a eu une erreur !");
         },
         success: function() {
-          self.fluxView = new fluxView({model: self.fluxModel});
+          self.fluxView = new fluxView({model: self.fluxModel, id: id});
           self.fluxView.render();
         }
       });

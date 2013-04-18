@@ -1,7 +1,7 @@
 <header class="navbar navbar-inverse navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container-fluid">
-			<a class="btn pull-right" href="#list_rss/{{cat_id}}"><i class="icon-list"></i> Retour</a>
+			<a class="btn pull-right" href="#list_rss/{{[0].cat_id}}"><i class="icon-list"></i> Retour</a>
 			<a href="#"><img src="images/KJ-logo.png" alt="logo"/></a>
 		</div>
 	</div>
@@ -9,7 +9,7 @@
 
 <div class="container-fluid">
 	<div class="rssDiv">
-		<h2>{{title}}</h2>
+		<h2>{{[0].title}}</h2>
 		<div id="divRss"></div>
 	</div>
 </div>

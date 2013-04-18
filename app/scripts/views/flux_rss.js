@@ -15,14 +15,15 @@ define([
     
     initialize: function(){
       this.datas = this.model.toJSON();
-      console.log(this.datas);
+      rss = _.where(this.datas, {id: this.options.id});
+      console.log(rss[0].rss_url);
     },
 
     render: function() {
-      this.$el.html(this.template(this.model.toJSON()));
+      this.$el.html(this.template(rss));
       $('#divRss').FeedEk({
-            FeedUrl: this.datas.rss_url,
-            MaxCount: 30
+            FeedUrl: rss[0].rss_url,
+            MaxCount: 200
       });
       return this;
     }
