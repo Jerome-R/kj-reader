@@ -6,6 +6,6 @@ define([
 ], function( Backbone ) {
 
   return Backbone.Model.extend({
-    url: '/api/model.json'
+    url: '/api/menujson'
   });
 });

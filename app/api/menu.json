@@ -1,0 +1,22 @@
+[
+	{
+	"id": "1",	
+	"title": "Sport",
+  	"link": "#list_rss/1"
+	},
+	{
+	"id": "2",	
+	"title": "Actualité",
+  	"link": "#list_rss/2"
+	},
+	{
+	"id": "3",	
+	"title": "High-Tech",
+  	"link": "#list_rss/3"
+	},
+	{
+	"id": "4",	
+	"title": "Finance",
+  	"link": "#list_rss/4"
+	}
+]

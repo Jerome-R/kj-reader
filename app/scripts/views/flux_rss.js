@@ -21,7 +21,7 @@ define([
     render: function() {
       this.$el.html(this.template(this.model.toJSON()));
       $('#divRss').FeedEk({
-            FeedUrl: this.datas[1].rss_url,
+            FeedUrl: this.datas.rss_url,
             MaxCount: 3
       });
       return this;
